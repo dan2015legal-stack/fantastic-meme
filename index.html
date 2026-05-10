@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Vilma Sousa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Montserrat', sans-serif;
+            display: flex; align-items: center; justify-content: center;
+            min-height: 100vh; padding: 20px;
+        }
+        .main-card {
+            background: white; border-radius: 30px;
+            padding: 30px; width: 100%; max-width: 500px; text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 { font-family: 'Playfair Display', serif; color: #2c5282; margin-bottom: 20px; font-size: 1.8rem; }
+        .video-box {
+            width: 100%; border-radius: 15px; overflow: hidden;
+            background: #000; margin-bottom: 20px;
+            border: 2px solid #b9d9eb;
+            line-height: 0; /* Remove espaços extras */
+        }
+        video {
+            width: 100% !important;
+            height: auto !important;
+            display: block;
+        }
+        .heart { color: #ff6b6b; font-size: 1.5rem; margin-top: 15px; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <h1>Para Vilma Sousa ❤️</h1>
+        
+        <div class="video-box">
+            <video controls preload="metadata" playsinline>
+                <source src="videomae.mp4" type="video/mp4">
+                Seu celular não suporta o vídeo direto.
+            </video>
+        </div>
+
+        <p>Missão cumprida! Você encontrou o vídeo.<br>Obrigado por tudo, <strong>Vilma</strong>.</p>
+        <div class="heart">❤️</div>
+    </div>
+
+</body>
+</html>
